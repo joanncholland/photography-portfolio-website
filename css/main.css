@@ -1,59 +1,110 @@
-* {
-  box-sizing: border-box;
+html, body {
+
+}
+
+.navbar {
+  background-color: white;
 }
 
 .menu-icon {
-    display: inline-block;
-    cursor: pointer;
+  display: inline-block;
+  cursor: pointer;
 }
 
 .bar1, .bar2, .bar3 {
-    width: 35px;
-    height: 5px;
-    background-color: #333;
-    margin: 6px 0;
-    transition: 0.4s;
-}
-<<<<<<< HEAD
-.container {
-    display: inline-block;
-    cursor: pointer;
-    float: right;
-    margin-right: 30px;
-    margin-top: 30px;
-}
-
-.bar1, .bar2, .bar3 {
-    width: 30px;
-    height: 1px;
-    background-color: #333;
-    margin: 6px 0;
-    transition: 0.4s;
+  width: 40px;
+  height: 2px;
+  background-color: #333;
+  margin: 9px 0;
+  transition: 0.4s;
 }
 
 .change .bar1 {
-    -webkit-transform: rotate(-45deg) translate(9px, 12px);
-    transform: rotate(-45deg) translate(0px, 5px);
+  -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+  transform: rotate(-45deg) translate(-9px, 6px);
 }
 
-=======
-
-.change .bar1 {
-    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
-    transform: rotate(-45deg) translate(-9px, 6px);
-}
-
->>>>>>> c2577e584ca1222fe91b205a7bc72c30e546c516
 .change .bar2 {opacity: 0;}
 
 .change .bar3 {
-    -webkit-transform: rotate(45deg) translate(-8px, -8px);
-<<<<<<< HEAD
-    transform: rotate(45deg) translate(-3px, -12px);
-=======
-    transform: rotate(45deg) translate(-8px, -8px);
+  -webkit-transform: rotate(45deg) translate(-8px, -8px);
+  transform: rotate(45deg) translate(-8px, -8px);
 }
-#menu {
+
+
+ul {
+  padding: 0;
+  list-style: none;
   display: none;
->>>>>>> c2577e584ca1222fe91b205a7bc72c30e546c516
+  position: absolute;
+  top: 70px;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: white;
+  text-align: right;
+}
+
+ul li {
+  padding: 10px;
+  cursor: pointer;
+}
+
+/* Extra small devices (portrait phones, less than 576px) */
+/* No media query for `xs` since this is the default in Bootstrap */
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+  html, body {
+    background-color: black;
+  }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  html, body {
+    background-color: yellow;
+  }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  html, body {
+    background-color: green;
+  }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  html, body {
+    background-color: blue;
+  }
+  .menu-icon {
+    display: none;
+  }
+
+  h1 {
+    z-index: 1;
+    display: inline;
+    float: left;
+    color: black;
+  }
+
+  ul {
+    padding: 0;
+    list-style: none;
+    display: inline;
+    position: absolute;
+    top: 12px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    text-align: right;
+  }
+
+  ul li {
+    display: inline-block;
+    padding: 10px;
+  }
 }
