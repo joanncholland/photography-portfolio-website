@@ -1,23 +1,29 @@
-html, body {
-
+* {
+  font-family: 'Open Sans', sans-serif;
 }
 
 .navbar {
   background-color: white;
+  height: 200px;
 }
 
-h1 {
+.logo {
   z-index: 1;
   display: inline;
   float: left;
-  color: black;
+  color: #222;
   -moz-transition: all .2s ease-in;
   -o-transition: all .2s ease-in;
   -webkit-transition: all .2s ease-in;
   transition: all .2s ease-in;
   cursor: pointer;
   text-transform: uppercase;
-  font-weight: 800;
+  font-weight: 700;
+  margin-top: 70px;
+}
+
+.logo {
+  font-size: 2.8em;
 }
 
 h1:hover {
@@ -27,6 +33,7 @@ h1:hover {
 .menu-icon {
   display: inline-block;
   cursor: pointer;
+  margin-top: 55px;
 }
 
 .bar1, .bar2, .bar3 {
@@ -51,11 +58,12 @@ h1:hover {
 
 
 ul {
+  z-index: 1;
   padding: 0;
   list-style: none;
   display: none;
-  position: absolute;
-  top: 70px;
+  position: fixed;
+  top: 150px;
   left: 0;
   width: 100vw;
   height: 100vh;
@@ -65,10 +73,11 @@ ul {
 
 ul li {
   cursor: pointer;
+  margin-right: 150px;
 }
 
 ul li a {
-  font-weight: 300;
+  font-weight: 400;
   text-transform: uppercase;
   font-size: 0.8em;
   color: #999;
@@ -83,11 +92,40 @@ ul li .active {
   color: black;
 }
 
-img {
-  object-fit: cover;
-  padding: 40px;
+.image{
+  position:relative;
+  overflow:hidden;
+  padding-bottom:100%;
+  max-height: 100%;
+  max-width: 500px;
+  margin: 0 auto;
+
+}
+.image img{
   width: 100%;
-  height: 400px;
+  max-width: 500px;
+  position:absolute;
+}
+
+img:hover {
+  -moz-transition: all .1s ease;
+  -o-transition: all .1s ease;
+  -webkit-transition: all .1s ease;
+  transition: all .1s ease;
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+.row {
+  padding-top: 20px;
+}
+
+.caption {
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 300;
+  font-size: 1em;
+  padding-top: 10px;
 }
 
 /* Extra small devices (portrait phones, less than 576px) */
@@ -96,35 +134,36 @@ img {
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) {
   html, body {
-    background-color: black;
+    background-color: white;
   }
 }
 
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
   html, body {
-    background-color: yellow;
+    background-color: white;
   }
 }
 
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
   html, body {
-    background-color: green;
+    background-color: white;
   }
 }
 
 /* Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
   html, body {
-    background-color: blue;
+    background-color: white;
   }
   .menu-icon {
     display: none;
   }
 
-  h1 {
+  .logo {
     z-index: 1;
+    position: relative;
     display: inline;
     float: left;
     color: black;
@@ -140,11 +179,12 @@ img {
   }
 
   ul {
+    z-index: 0;
     padding: 0;
     list-style: none;
     display: inline-block;
-    position: absolute;
-    top: 0;
+    position: relative;
+    top: -70px;
     width: 100%;
     height: 100%;
     background-color: white;
@@ -152,15 +192,11 @@ img {
   }
 
   ul li {
-    margin-top: 20px;
-    margin-right: 20px;
+    position: relative;
+    top: 20px;
+    margin-right: 40px;
     cursor: pointer;
     float: right;
   }
 
-  img {
-    padding: 40px;
-    width: 100%;
-    height: 75%;
-  }
 }
