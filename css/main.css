@@ -63,7 +63,7 @@ ul {
   list-style: none;
   display: none;
   position: fixed;
-  top: 150px;
+  top: 180px;
   left: 0;
   width: 100vw;
   height: 100vh;
@@ -74,12 +74,13 @@ ul {
 ul li {
   cursor: pointer;
   margin-right: 150px;
+  margin: 15%;
 }
 
 ul li a {
   font-weight: 400;
   text-transform: uppercase;
-  font-size: 0.8em;
+  font-size: 2em;
   color: #999;
 }
 
@@ -118,6 +119,10 @@ img:hover {
 
 .row {
   padding-top: 20px;
+}
+
+.pictures {
+  padding-bottom: 100px;
 }
 
 .caption {
