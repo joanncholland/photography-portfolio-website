@@ -6,6 +6,24 @@ html, body {
   background-color: white;
 }
 
+h1 {
+  z-index: 1;
+  display: inline;
+  float: left;
+  color: black;
+  -moz-transition: all .2s ease-in;
+  -o-transition: all .2s ease-in;
+  -webkit-transition: all .2s ease-in;
+  transition: all .2s ease-in;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-weight: 800;
+}
+
+h1:hover {
+  color: #575757;
+}
+
 .menu-icon {
   display: inline-block;
   cursor: pointer;
@@ -46,8 +64,30 @@ ul {
 }
 
 ul li {
-  padding: 10px;
   cursor: pointer;
+}
+
+ul li a {
+  font-weight: 300;
+  text-transform: uppercase;
+  font-size: 0.8em;
+  color: #999;
+}
+
+ul li a:hover {
+  text-decoration: none;
+  color: black;
+}
+
+ul li .active {
+  color: black;
+}
+
+img {
+  object-fit: cover;
+  padding: 40px;
+  width: 100%;
+  height: 400px;
 }
 
 /* Extra small devices (portrait phones, less than 576px) */
@@ -88,15 +128,23 @@ ul li {
     display: inline;
     float: left;
     color: black;
+    -moz-transition: all .2s ease-in;
+    -o-transition: all .2s ease-in;
+    -webkit-transition: all .2s ease-in;
+    transition: all .2s ease-in;
+    cursor: pointer;
+  }
+
+  h1:hover {
+    color: #575757;
   }
 
   ul {
     padding: 0;
     list-style: none;
-    display: inline;
+    display: inline-block;
     position: absolute;
-    top: 12px;
-    left: 0;
+    top: 0;
     width: 100%;
     height: 100%;
     background-color: white;
@@ -104,7 +152,15 @@ ul li {
   }
 
   ul li {
-    display: inline-block;
-    padding: 10px;
+    margin-top: 20px;
+    margin-right: 20px;
+    cursor: pointer;
+    float: right;
+  }
+
+  img {
+    padding: 40px;
+    width: 100%;
+    height: 75%;
   }
 }
