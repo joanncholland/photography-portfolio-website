@@ -63,7 +63,7 @@ ul {
   list-style: none;
   display: none;
   position: fixed;
-  top: 150px;
+  top: 180px;
   left: 0;
   width: 100vw;
   height: 100vh;
@@ -73,12 +73,17 @@ ul {
 
 ul li {
   cursor: pointer;
+<<<<<<< HEAD
+=======
+  margin-right: 150px;
+  margin: 15%;
+>>>>>>> 4b0fdd272df76ee5944f88cbcffd5ee79a5c2a9b
 }
 
 ul li a {
   font-weight: 400;
   text-transform: uppercase;
-  font-size: 0.8em;
+  font-size: 2em;
   color: #999;
 }
 
