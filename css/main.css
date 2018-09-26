@@ -73,11 +73,9 @@ ul {
 
 ul li {
   cursor: pointer;
-<<<<<<< HEAD
-=======
-  margin-right: 150px;
-  margin: 15%;
->>>>>>> 4b0fdd272df76ee5944f88cbcffd5ee79a5c2a9b
+  margin-right: 110px;
+  margin-bottom: 10vh;
+  margin-top: 5vh;
 }
 
 ul li a {
@@ -96,16 +94,16 @@ ul li .active {
   color: black;
 }
 
-.image{
+.image {
   position:relative;
   overflow:hidden;
   padding-bottom:100%;
   max-height: 100%;
   max-width: 500px;
   margin: 0 auto;
-
 }
-.image img{
+
+.image img {
   width: 100%;
   max-width: 500px;
   position:absolute;
@@ -140,28 +138,28 @@ img:hover {
 /* No media query for `xs` since this is the default in Bootstrap */
 
 /* Small devices (landscape phones, 576px and up) */
-@media (min-width: 576px) {
+@media only screen and (min-width: 576px) {
   html, body {
     background-color: white;
   }
 }
 
 /* Medium devices (tablets, 768px and up) */
-@media (min-width: 768px) {
+@media only screen and (min-width: 768px) {
   html, body {
     background-color: white;
   }
 }
 
 /* Large devices (desktops, 992px and up) */
-@media (min-width: 992px) {
+@media only screen and (min-width: 992px) {
   html, body {
     background-color: white;
   }
 }
 
 /* Extra large devices (large desktops, 1200px and up) */
-@media (min-width: 1200px) {
+@media only screen and (min-width: 1200px) {
   html, body {
     background-color: white;
   }
@@ -192,7 +190,7 @@ img:hover {
     list-style: none;
     display: inline-block;
     position: relative;
-    top: -70px;
+    top: -120px;
     width: 100%;
     height: 100%;
     background-color: white;
@@ -205,6 +203,10 @@ img:hover {
     margin-right: 40px;
     cursor: pointer;
     float: right;
+  }
+
+  ul li a {
+    font-size: 0.8em;
   }
 
 }
