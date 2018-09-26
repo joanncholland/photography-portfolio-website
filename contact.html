@@ -37,7 +37,7 @@
 
           <form>
             <div class="form-group">
-              <label for="first-name">Name</label>
+              <label id="name-label" for="first-name">Name</label>
               <div class="row">
                 <div class="col">
                   <input aria-describedby="first-name" type="text" class="form-control rounded-0">
@@ -54,7 +54,6 @@
               <label for="email">Email address</label>
               <input type="email" class="form-control rounded-0" id="email">
             </div>
-          </form>
 
           <div class="form-group">
             <label for="subject">Subject</label>
@@ -66,7 +65,7 @@
             <textarea class="form-control rounded-0" id="textarea" rows="3"></textarea>
           </div>
 
-          <a type="submit" class="btn">Submit</a>
+          <button type="submit" class="btn"><a href="#">Submit</a></button>
         </form>
 
         </div>
@@ -76,8 +75,10 @@
 
         <div class="col-md-5">
 
-          <p>Phone</p>
-          <p>07777555666</p>
+          <p class="contact-info" id="contact-title">Contact</p>
+          <p class="contact-info" id="contact-name">J Doe</p>
+          <p class="contact-info" id="contact-email">j.doe@gmail.com</p>
+          <p class="contact-info" id="contact-number">+44 (7777)555666</p>
 
         </div>
 

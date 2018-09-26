@@ -1,5 +1,6 @@
 * {
   font-family: 'Open Sans', sans-serif;
+  border-radius: 0 !important;
 }
 
 /* NAVBAR ----------------------------------------------*/
@@ -159,11 +160,64 @@ img {
 
 /* CONTACT ----------------------------------------------*/
 
+label {
+  opacity: 0.7;
+  font-size: 0.8em;
+}
+
+#first-name, #last-name {
+  font-size: 0.6em;
+}
+
+#name-label {
+  height: 100%;
+  bottom: 0;
+  position: absolute;
+}
+
+.form-group {
+  padding-bottom: 20px;
+}
+
+#contact-title, #contact-name {
+  font-weight: 700;
+}
+
+#contact-name {
+  opacity: 0.7;
+}
+
+#contact-email, #contact-number {
+  font-weight: 200;
+  opacity: 0.7;
+}
+
+.contact-info {
+  padding: 0;
+  margin: 0;
+  font-size: 0.8em;
+}
+
 .btn {
   background-color: #222;
-  color: white;
   text-transform: uppercase;
+}
+
+.btn a {
+  padding: 20px;
+  color: white;
   font-weight: 700;
+  font-size: 0.8em;
+  text-align: center;
+}
+
+.btn:hover {
+  background-color: #575757;
+}
+
+.btn a:hover {
+  text-decoration: none;
+  color: white;
 }
 
 /* Extra small devices (portrait phones, less than 576px) */
