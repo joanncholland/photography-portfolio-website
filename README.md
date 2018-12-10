@@ -1,5 +1,7 @@
 # Photography Portfolio Website
 
+This was a practice website for learning about website design and bootstrap. It's also responsive for mobile devices.
+
 ## Index Page
 ![Index Page](screenshots/index.png)
 
