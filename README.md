@@ -1,6 +1,6 @@
 # Photography Portfolio Website
 
-This was a practice website for learning about website design and bootstrap. It's also responsive for mobile devices.
+This is a responsive website for a photography porfolio that uses the bootstrap framework. It's design is minimal, allowing the images to stand out.
 
 ## Index Page
 ![Index Page](screenshots/index.png)
